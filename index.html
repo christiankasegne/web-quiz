@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>web quiz </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- --- view highscore --- -->
+        <nav>
+            <a class="highscores" href="highscore.html">View Highscores</a>
+            <div class="timer">Time<span id="time">&nbsp0:00</span></div>
+        </nav>
+        
+        <!-- --- start quiz  button--- -->
+        <main class="container">
+            <section id= home-page" class="home-center home-column" >
+                <h1>Coding Quiz Challenge</h1>
+                <p>
+                    Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your screen time by 10 seconds.
+                </p>
+                <button class="start"><a href="questions.html">Start Quiz</a></button>
+            </section>
+            <section id="questions" class="hide">
+                <h1 class="question">what is the answer to this question?</h1>         <!-- --- question pages --- -->
+                <div>
+                    <h4 id="choice" class="choice-text" data-number="1">Choice 1</h4>
+                    <h4 id="choice" class="choice-text" data-number="2">Choice 2</h4>
+                    <h4 id="choice" class="choice-text" data-number="3">Choice 3</h4>
+                    <h4 id="choice" class="choice-text" data-number="4">Choice 4</h4>
+                </div>
+            </section>
+            <div class="feedback" id="feedback"></div>
+            <section id="last-page" class="hide">
+                <h2>All done!</h2>
+                <p>Your final score is <span id="final-score"></span>:</p>
+                <p>Enter initials: <input type="text" id="initial" />
+                    <button id="submit">Submit</button>
+                </p>
+            </section> 
+        </main>
+
+        <script src="../JavaScript/Script.js"></script>
+    </body>
+</html>

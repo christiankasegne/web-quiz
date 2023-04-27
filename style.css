@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: #333;
+}
+.highscores {
+    position: absolute;
+    margin: 20px;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    background-color: rgb(243, 237, 222);
+    font-size: 25px;
+}
+.highscores:hover {
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgb(194, 146, 25);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+
+button {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    background-color:rgb(243, 237, 222);;
+    margin-top: 10px;
+    align-items: center;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgb(194, 146, 25);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.timer {
+    text-align: right;
+    padding: 20px 20px 0;
+    font-size: 25px;
+}
+
+#choices {
+    margin-top: 0.5rem;
+    margin-left: 35%;
+    margin-right: 40%;
+    padding: 0.5rem;
+   border-radius: 15px;
+    background-color: rgb(243, 237, 222);
+    text-align: center;
+}
+
+#choices:hover {
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgb(194, 146, 25);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hide {
+    display: none; 
+}
+
+/*color after answering Q correct || wrong*/
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc354d;
+} 

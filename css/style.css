@@ -60,7 +60,7 @@ button:hover {
     padding: 0.5rem;
     border: solid 1px;
     border-radius: 15px;
-    background-color: rgb(243, 237, 222);
+    /* background-color: rgb(243, 237, 222); */
     text-align: center;
 }
 
@@ -72,8 +72,17 @@ button:hover {
 }
 .choice-text {
     padding: 1.5rem;
-    width: % ;
+    width: 50% ;
 }
+
+/* .feedback {
+    font-style: italic;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: gray;
+    border-top: 2px solid rgb(201, 193, 193);
+} */
 
 .flex-column {
     display: flex;
@@ -92,5 +101,5 @@ button:hover {
 }
 
 .incorrect {
-    background-color: #dc354d;
+    background-color: #dc3545;
 } 

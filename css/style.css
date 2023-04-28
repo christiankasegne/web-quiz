@@ -53,10 +53,10 @@ button:hover {
     font-size: 25px;
 }
 
-#choices {
+#choice {
     margin-top: 0.5rem;
     margin-left: 35%;
-    margin-right: 40%;
+    margin-right: 0%;
     padding: 0.5rem;
     border: solid 1px;
     border-radius: 15px;
@@ -64,11 +64,15 @@ button:hover {
     text-align: center;
 }
 
-#choices:hover {
+#choice:hover {
     cursor: pointer;
     box-shadow:0 0.4rem 1.4rem 0 rgb(194, 146, 25);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+}
+.choice-text {
+    padding: 1.5rem;
+    width: % ;
 }
 
 .flex-column {
@@ -76,6 +80,7 @@ button:hover {
     flex-direction: column;
 
 }
+
 
 .hide {
     display: none; 

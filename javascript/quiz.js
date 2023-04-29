@@ -1,9 +1,11 @@
 var question = document.getElementById('question');
 var choices = Array.from(document.getElementsByClassName('choice-text'));
+var timerText = document.getElementById(`timer`)
+var scoreText = document.getElementById(`score`)
 
 var currentQuestion = {};
 var acceptingAnswers = true;
-var score = 0;
+var score = 75;
 var questionCounter = 0;
 var availableQuestions = [];
 
@@ -52,19 +54,19 @@ var questions = [
   },
 ];
 
-var CORRECT_BONES = 10;
+var INCORRECT_BONES = 10;
 var MAX_QUESTIONS = 5;
 
 startQuiz = () => {
   questionCounter = 0;
-  score = 0;
+  score = 75;
   availableQuestions = [...questions];
-  console.log(availableQuestions);
   getNewQuestion();
 };
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem(`mostRecentScore`, score);
     return window.location.assign(`../html/submit.html`);
   }
   questionCounter++;
@@ -88,16 +90,24 @@ choices.forEach((choice) => {
     var selectedChoice = e.target;
     var selectedAnswer = selectedChoice.dataset[`number`];
 
-    var classToApply = 
-    selectedAnswer == currentQuestion.answer ? `correct` : `incorrect`;
+    var classToApply =
+      selectedAnswer == currentQuestion.answer ? `correct` : `incorrect`;
 
-    selectedChoice.parentElement.classList.add(classToApply)
-    setTimeout( () => {
-        selectedChoice.parentElement.classList.remove(classToApply);
-        getNewQuestion();
-    }, 500)
+      if (classToApply === `incorrect`) {
+          decrementScore(INCORRECT_BONES)
+      }
 
+    selectedChoice.parentElement.classList.add(classToApply);
+    setTimeout(() => {
+      selectedChoice.parentElement.classList.remove(classToApply);
+      getNewQuestion();
+    }, 500);
   });
 });
+
+decrementScore = num => {
+  score -= num;
+  scoreText.innerText = score;
+}
 
 startQuiz();

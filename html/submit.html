@@ -17,13 +17,19 @@
         <main class="container">
             <section id="last-page">
                 <h2>All done!</h2>
-                <p>Your final score is <span id="final-score"></span>:</p>
-                <p>Enter initials: <input type="text" id="initial" />
-                    <button id="submit">Submit</button>
+                <p>Your final score is: <span id="final-score">0</span></p>
+                <p>Enter initials: <input type="text" name="initials" id="initials" />
+                <button
+                    type="submit"
+                    id="submit"
+                    onclick="saveHighScore(event)" 
+                    disabled>
+                    Submit
+                </button>
                 </p>
             </section> 
         </main>
 
-        <script src="../JavaScript/Script.js"></script>
+        <script src="../javascript/submit.js"></script>
     </body>
 </html>

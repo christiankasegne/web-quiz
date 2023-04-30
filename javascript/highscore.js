@@ -1,9 +1,7 @@
-var highScoresList = document.getElementById(`list`)
-var highScores = JSON.parse(localStorage.getItem(`highScore`)) || [];
+var list = document.getElementById(`list`);
+var highScores = JSON.parse(localStorage.getItem(`highScores`)) || [];
 
-
-highScoresList.innerHTML = highScores
-.map(score => {
-    return `<li class="high-score">${score.initials}-${score.score}</li>`;
+highScores.map(score => {
+    console.log(score);
 })
-.join("");
+

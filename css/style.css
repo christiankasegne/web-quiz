@@ -75,19 +75,14 @@ button:hover {
     width: 50% ;
 }
 
-/* .feedback {
-    font-style: italic;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 10px;
-    color: gray;
-    border-top: 2px solid rgb(201, 193, 193);
-} */
-
 .flex-column {
     display: flex;
     flex-direction: column;
 
+}
+
+#finalScore {
+    font-size: 60px;
 }
 
 

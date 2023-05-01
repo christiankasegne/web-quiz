@@ -23,6 +23,8 @@ list = e => {
   
 
   highScores.push(score);
+
+  console.log(highScores)
   highScores.sort((a, b) => b.score - a.score)
   highScores.splice(10);
   

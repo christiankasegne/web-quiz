@@ -84,7 +84,16 @@ button:hover {
 #finalScore {
     font-size: 60px;
 }
+ 
+#list {
+    list-style: none;
+    margin-bottom: 40px;
+}
 
+.high-score {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
 
 .hide {
     display: none; 

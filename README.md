@@ -1,8 +1,8 @@
 # web-quiz
-![alt text](./images/startquiz.png)
-![alt text](./images/quiz.png)
-![alt text](./images/submit.png)
-![alt text](./images/highscores.png)
+![alt text](./image/startquiz.png)
+![alt text](./image/quiz.png)
+![alt text](./image/submit.png)
+![alt text](./image/highscores.png)
 
 ## Description
 

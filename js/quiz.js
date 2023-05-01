@@ -67,7 +67,7 @@ startQuiz = () => {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem(`mostRecentScore`, score);
-    return window.location.assign(`../html/submit.html`);
+    return window.location.assign(`./submit.html`);
   }
   questionCounter++;
   var questionIndex = Math.floor(Math.random() * availableQuestions.length);
